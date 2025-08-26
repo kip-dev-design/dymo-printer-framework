@@ -1,2 +1,15 @@
 # dymo-printer-framework
-Lightweight framework helpers for DYMO label printing from browser
+
+Lightweight JavaScript framework for DYMO label printing.
+
+## Installation
+You can install directly from GitHub:
+
+```bash
+npm install github:kip-dev-design/dymo-printer-framework#v1.0.0
+
+Usage (ESM)
+import { printLabel } from "dymo-printer-framework";
+
+printLabel("Hello World");
+
