@@ -1,2 +1,2 @@
 # dymo-printer-framework
-Lightweight framework helpers for DYMO label printing in browser
+Lightweight framework helpers for DYMO label printing from browser
