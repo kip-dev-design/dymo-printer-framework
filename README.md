@@ -116,7 +116,7 @@ Example Template XML
 
 #### printWithData()
 
-```http
+```js
   printWithData(printerName, xmlTemplate, replacements)
 ```
 
