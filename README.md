@@ -34,7 +34,7 @@ async function demo() {
 
   // Load label template from URL
   const xmlTemplate = await loadLabelXmlFromUrl(
-    "https://cdn.jsdelivr.net/gh/youruser/labels/address.xml"
+    "https://raw.githubusercontent.com/kip-dev-design/dymo-printer-framework/main/labels/sample-template.xml"
   );
 
   // Fill placeholders {{name}}, {{date}}, {{id}} in the template
