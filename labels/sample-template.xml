@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DieCutLabel Version="8.0" Units="twips">
+  <PaperOrientation>Landscape</PaperOrientation>
+  <Id>Address</Id>
+  <PaperName>30252 Address</PaperName>
+  <DrawCommands>
+    <RoundRectangle X="0" Y="0" Width="3060" Height="5040" Rx="180" Ry="180" />
+  </DrawCommands>
+  <ObjectInfo>
+    <TextObject>
+      <Name>Name</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <LinkedObjectName></LinkedObjectName>
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>True</IsVariable>
+      <Text>{{name}}</Text>
+      <Font Family="Arial" Size="12" Bold="True" />
+      <HorizontalAlignment>Center</HorizontalAlignment>
+    </TextObject>
+    <Bounds X="300" Y="200" Width="4000" Height="600" />
+  </ObjectInfo>
+  <ObjectInfo>
+    <TextObject>
+      <Name>Date</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>True</IsVariable>
+      <Text>{{date}}</Text>
+      <Font Family="Arial" Size="9" />
+      <HorizontalAlignment>Center</HorizontalAlignment>
+    </TextObject>
+    <Bounds X="300" Y="900" Width="4000" Height="500" />
+  </ObjectInfo>
+  <ObjectInfo>
+    <TextObject>
+      <Name>ID</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>True</IsVariable>
+      <Text>{{id}}</Text>
+      <Font Family="Arial" Size="9" Italic="True" />
+      <HorizontalAlignment>Center</HorizontalAlignment>
+    </TextObject>
+    <Bounds X="300" Y="1500" Width="4000" Height="500" />
+  </ObjectInfo>
+</DieCutLabel>
