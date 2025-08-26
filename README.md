@@ -1,17 +1,20 @@
-# dymo-printer-framework
 
-Lightweight JavaScript framework for DYMO label printing.
+# Dymo Label Printer Framework
+
+Lightweight JavaScript framework for DYMO label printing from browser.
+
 
 ## Installation
+
 You can install directly from GitHub:
 
 ```bash
-npm install github:kip-dev-design/dymo-printer-framework#v1.0.0
+  npm install github:kip-dev-design/dymo-printer-framework#v1.0.0
 ```
-✅ Example Usage
+    
+## Usage/Examples
 
-### Import (ESM)
-```js
+```javascript
 import {
   initPrinter,
   getPrinters,
@@ -25,7 +28,7 @@ import {
 ```
 
 🔹 High-Level Helper API (Recommended)
-These are general functions for loading label XML templates, filling in placeholders, and printing.
+- These are general functions for loading label XML templates, filling in placeholders, and printing.
 ```js
 async function demo() {
   // Initialize and select first connected DYMO printer
@@ -61,10 +64,9 @@ async function demo() {
     id: "67890"
   });
 }
-
 ```
 🔹 Low-Level API (Direct DYMO SDK)
-You can also use the raw DYMO framework for advanced features:
+- You can also use the raw DYMO framework for advanced features:
 ```js
 import dymoFramework, { getPrinters, printLabel } from "dymo-printer-framework";
 
@@ -76,25 +78,8 @@ console.log(printers);
 printLabel("<labelXmlHere>", "DYMO LabelWriter 450");
 ```
 
-API Reference
-initPrinter() → Initializes DYMO and selects the first connected LabelWriter printer. Returns the printer object.
-
-getPrinters() → Returns an array of installed printers.
-
-loadLabelXmlFromUrl(url) → Fetches a label XML template from a remote URL.
-
-fillLabelTemplate(xml, replacements) → Replaces placeholders ({{key}}) with provided values.
-
-openLabel(xml) → Converts label XML into a DYMO label object.
-
-renderPreview(label) → Renders a label object as a Base64 PNG data URL.
-
-printLabel(xml, printerName?) → Prints a filled label XML to the given (or selected) printer.
-
-printWithData(printerName, xmlTemplate, replacements) → One-liner: load + fill + print.
-
 Example Template XML
-A DYMO Address label (30252) with placeholders:
+- A DYMO Address label (30252) with placeholders:
 ```xml
 <DieCutLabel Version="8.0" Units="twips">
   <PaperOrientation>Landscape</PaperOrientation>
@@ -115,3 +100,30 @@ A DYMO Address label (30252) with placeholders:
 </DieCutLabel>
 
 ```
+## API Reference
+
+
+| Function | Description                |
+| :-------- | :------------------------- |
+| `initPrinter()` | Initializes DYMO and selects the first connected LabelWriter printer. Returns the printer object. |
+| `getPrinters()` | Returns an array of installed printers. |
+| `loadLabelXmlFromUrl(url)` | Fetches a label XML template from a remote URL.
+| `fillLabelTemplate(xml, replacements)` | Replaces placeholders ({{key}}) with provided values.
+| `openLabel(xml)` | Converts label XML into a DYMO label object.|
+| `renderPreview(label)` | Renders a label object as a Base64 PNG data URL.|
+| `printLabel(xml, printerName?)` | Prints a filled label XML to the given (or selected) printer.|
+| `printWithData()` | One-liner: load + fill + print.|
+
+#### printWithData()
+
+```http
+  printWithData(printerName, xmlTemplate, replacements)
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `printerName` | `string` | **Required**. Name of printer from `getPrinters()` |
+| `xmlTemplate` | `string` | **Required**. xml template |
+| `replacements`| `string` | **Required**. key value object `name: "John", date: "2025-08-26"` |
+
+
