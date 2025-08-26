@@ -1,0 +1,14 @@
+{
+  "name": "dymo-printer-framework",
+  "version": "1.0.0",
+  "description": "Lightweight framework helpers for DYMO label printing from browser",
+  "main": "framework.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kip-dev-design/dymo-printer-framework.git"
+  },
+  "keywords": ["dymo", "label", "printer", "framework"],
+  "author": "kip-dev-design",
+  "license": "MIT"
+}
