@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DieCutLabel Version="8.0" Units="twips">
+  <PaperOrientation>Landscape</PaperOrientation>
+  <Id>LargeAddress</Id>
+  <PaperName>30321 Large Address</PaperName>
+  <DrawCommands>
+    <RoundRectangle X="0" Y="0" Width="3060" Height="5040" Rx="180" Ry="180" />
+  </DrawCommands>
+
+  <!-- QR Code -->
+  <ObjectInfo>
+    <BarcodeObject>
+      <Name>QRCode</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>True</IsVariable>
+      <Text>{{qrcode}}</Text>
+      <Type>QRCode</Type>
+      <Size>Large</Size>
+      <TextPosition>None</TextPosition>
+      <TextFont Family="Arial" Size="8" />
+      <CheckSumFont Family="Arial" Size="8" />
+    </BarcodeObject>
+    <Bounds X="200" Y="200" Width="2000" Height="2000" />
+  </ObjectInfo>
+
+  <!-- Name -->
+  <ObjectInfo>
+    <TextObject>
+      <Name>Name</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>True</IsVariable>
+      <Text>{{name}}</Text>
+      <Font Family="Arial" Size="12" Bold="True" />
+      <HorizontalAlignment>Left</HorizontalAlignment>
+    </TextObject>
+    <Bounds X="2400" Y="400" Width="2500" Height="600" />
+  </ObjectInfo>
+
+  <!-- Date -->
+  <ObjectInfo>
+    <TextObject>
+      <Name>Date</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>True</IsVariable>
+      <Text>{{date}}</Text>
+      <Font Family="Arial" Size="9" />
+      <HorizontalAlignment>Left</HorizontalAlignment>
+    </TextObject>
+    <Bounds X="2400" Y="1200" Width="2500" Height="500" />
+  </ObjectInfo>
+</DieCutLabel>
