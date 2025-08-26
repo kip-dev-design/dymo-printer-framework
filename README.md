@@ -42,6 +42,7 @@ async function demo() {
 
   // Fill placeholders {{name}}, {{date}}, {{id}} in the template
   const filledXml = fillLabelTemplate(xmlTemplate, {
+    qrcode: "https://kip-dev-design.github.io/",
     name: "John Doe",
     date: new Date().toLocaleString(),
     id: "12345"
@@ -59,6 +60,7 @@ async function demo() {
 
   // Or one-liner
   await printWithData(printer.name, xmlTemplate, {
+    qrcode: "https://kip-dev-design.github.io/",
     name: "Jane Smith",
     date: "2025-08-26",
     id: "67890"
