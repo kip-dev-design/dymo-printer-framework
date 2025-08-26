@@ -2,7 +2,7 @@
   "name": "dymo-printer-framework",
   "version": "1.0.0",
   "description": "Lightweight framework helpers for DYMO label printing from browser",
-  "main": "framework.js",
+  "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
